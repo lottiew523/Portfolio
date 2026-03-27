@@ -31,30 +31,26 @@ The package solves the transient state of a 2D area of size Lx by Ly with no ext
 # Instructions on Running
 
 Method 1 (recommended)
-	
-	All physical conditions of the code can be changed in mpi_parameters.f90 .
-	
-	
-	
-	LOCAL: Use 
-	
+All physical conditions of the code can be changed in mpi_parameters.f90 .
+LOCAL: Use 
+
 	./run.sh 
-	
-	to run suite
-	
+to run suite
 	
 	
-	HPC: Use 
+	
+HPC: Use 
 	
 	mpif90 -c -real-size 64 -double-size 64 mpi_parameters*.f90 && mpif90 -c -real-size 64 -double-size 64 MY_MPI.f90 && mpif90 -real-size 64 -double-size 64 -O2 -o SWE.exe mpi_main.f90 *.o
 	
-	Followed by 
+Followed by 
 	
 	qsub runHPC.sh
 	
-	Note that for HPC all files must exist in same WD, and ncpus must be pinned matching -np flag. e.g.
-	!				#PBS -l ncpus=4
-	!				mpirun -np 4  ./SWE.exe > output.dat
+Note that for HPC all files must exist in same WD, and ncpus must be pinned matching -np flag. e.g.
+	
+					#PBS -l ncpus=4
+					mpirun -np 4  ./SWE.exe > output.dat
 	
 
 Method 2: manual compile (for debugging or partial runs)
