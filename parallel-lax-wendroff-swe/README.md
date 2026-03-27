@@ -6,7 +6,7 @@ demonstration purposes only and is not licensed for reuse or distribution.
 		
 #----------------------------------------------------------------------------
 
-Modified 26/03/2026 by Charlotte Woods - view.py, bug fixes to I/O, runHPC.sh, run.sh, runinfo.txt (used in view.py)
+Modified 26/03/2026 by Charlotte Woods - view.py, bug fixes to I/O, runHPC.sh, run.sh
 
 ## My Contributions
 
