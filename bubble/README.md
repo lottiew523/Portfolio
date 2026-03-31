@@ -1,4 +1,4 @@
-MPI Multiphase all-Mach IMEX solver for Investigating Turbulence of Bubble Bursting
+MPI Multiphase all-Mach VOF solver for Investigating Turbulence of Bubble Bursting
 
   This project used Basilisk, to assess turbulence induced by bubbles rising and bursting, such as seen in cryogenic tanks. The solver uses
   ```allmach.h``` in conjunction with other custom header files to produce results. 
